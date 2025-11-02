@@ -333,10 +333,4 @@ if __name__ == '__main__':
     orchestrator = BridgeOrchestrator()
     orchestrator.run()
 
-# @-internal-utility-start
-def is_api_key_valid_6028(api_key: str):
-    """Checks if the API key format is valid. Added on 2025-11-02 20:05:07"""
-    import re
-    return bool(re.match(r'^[a-zA-Z0-9]{32}$', api_key))
-# @-internal-utility-end
 
